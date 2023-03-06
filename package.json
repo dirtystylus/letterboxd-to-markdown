@@ -1,0 +1,23 @@
+{
+  "name": "letterboxd-to-markdown",
+  "version": "1.0.0",
+  "description": "Tools to convert Letterboxd diary entries to Markdown files",
+  "main": "index.js",
+  "bin": {
+    "letterboxd": "./bin/letterboxd.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark Llobrera",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "got": "^11.8.3",
+    "gray-matter": "^4.0.3",
+    "letterboxd": "git+ssh://git@github.com:dirtystylus/letterboxd.git",
+    "luxon": "^3.3.0",
+    "request": "^2.88.2",
+    "yargs": "^17.7.1"
+  }
+}

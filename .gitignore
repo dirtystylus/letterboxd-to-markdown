@@ -1,0 +1,10 @@
+# Text editors
+.nova
+.vscode
+
+# Config
+.env
+
+# Node Modules
+
+node_modules
