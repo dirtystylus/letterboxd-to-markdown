@@ -1,4 +1,4 @@
-exports.command = 'rss';
+exports.command = 'diary';
 exports.desc = 'Create markdown files from RSS';
 exports.builder = (yargs) => {
 	yargs.alias('a', 'account')
@@ -10,7 +10,7 @@ exports.builder = (yargs) => {
 }
 
 exports.handler = (args) => {
-	let RSS = require('../../lib/rss.js');
+	let RSS = require('../../lib/diary.js');
 	let rss = new RSS(args);
 	rss.run();
 }
