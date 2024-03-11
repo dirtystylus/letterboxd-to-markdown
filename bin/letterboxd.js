@@ -15,30 +15,3 @@ yargs(hideBin(process.argv))
 	.demandCommand()
 	.help()
 	.parse()
-// let args = require('yargs')
-	
-	/*
-.command({
-	command: 'configure <key> [value]',
-	aliases: ['config', 'cfg'],
-	desc: 'Set a config variable',
-	builder: (yargs) => yargs.default('value', 'true'),
-	handler: (argv) => {
-		console.log(`setting ${argv.key} to ${argv.value}`)
-	}
-})
-
-exports.builder = (yargs) => {
-	yargs.alias('a', 'account')
-	.describe('a', 'Letterboxd account name')
-	.demandOption('a', 'Account is required, exiting.')
-	.wrap(null);
-	
-	return yargs;
-}
-
-exports.handler = (args) => {
-	let RSS = require('../../lib/diary.js');
-	let rss = new RSS(args);
-	rss.run();
-}*/
